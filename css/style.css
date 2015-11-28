@@ -1,0 +1,227 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.group:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #606161;             /* light grey */
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    background-color: #f0efef;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #033048;       /* dark blue */
+    margin-bottom: 30px;
+}
+
+
+.signup {
+    color: white;
+    font-weight: 800;
+    padding: 15px 60px;
+    background-color:#033048;       /* dark blue */
+    border-radius: 5px;
+
+}
+
+a:hover,
+.main-nav a:hover,
+.page h1 a:hover,
+.readmore a:hover,
+.learnmore a:hover,
+.sidebar a:hover{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    -webkit-transition:     all .1s;
+    -o-transition:          all .1s;
+    transition:             all .1s;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* Center the container */
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+
+}
+
+header {
+    padding: 30px 0;
+    /*overflow: hidden;*/
+    background: #033048;       /* dark blue */
+    margin-bottom: 50px;
+
+}
+
+.main-nav {
+    float:right;
+    margin-bottom: 20px
+    }
+
+.main-nav a {
+    color:#f9e42e;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 5px;
+    margin-left: 15px;
+}
+
+.posts {
+    display:inline-block;
+    width: 72.92%; 
+    margin-right: 2%;      
+    vertical-align: top;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    display:inline-block;
+    width: 25%; 
+    vertical-align: top;
+}
+
+.newsletter-signup{
+    padding:40px;
+    text-align: center;
+    background:#f9e42e;
+}
+
+footer {
+    text-align: center;
+    background: #121212;        /* almost black */
+    padding: 75px 0 45px;
+}
+
+footer ul {
+    margin: 75px 0;
+}
+
+footer li {
+    margin: 0 16px;
+    display: inline;
+}
+
+.learnmore{
+    float: left;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+.sidebar h3{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;  
+}
+
+.Categories  {
+    color:#033048;       /* dark blue */
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.Categories ul {
+    margin-bottom: 20px;
+   
+}
+.About-Relaxr {
+    color:#033048;    
+}
+
+.About-Relaxr p {
+    font: 22px/5.5;
+}
+
+.aside h3{
+    font-size:;
+    font-weight: 700;
+    color:#033048;       /* dark blue */
+    padding: 20px;
+}
+
+.firstcharacter {
+    font-size: 80px;
+    font-weight: 600;
+    float:left;
+    line-height: 65px;
+}
+
+.readmore {
+    color:#033048;
+    font-weight: 600;
+}
+
+.learnmore {
+    color:#033048;
+    font-weight: 600;
+}
+.readmore {
+    text-align:right;
+}
+
+p.readmore {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+    
+.socialmedia {
+        padding: 10px;
+        margin: 16px;
+}
+
+/******************************************
+/* MODULES
+/*******************************************/
+
+
+
+/******************************************
+/* STATE
+/*******************************************/
