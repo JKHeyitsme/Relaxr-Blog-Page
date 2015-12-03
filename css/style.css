@@ -5,7 +5,6 @@ Author: Your Name
 Developer @GA in NYC
 */
 
-
 /******************************************
 /* SETUP
 /*******************************************/
@@ -70,7 +69,8 @@ a:hover,
 .page h1 a:hover,
 .readmore a:hover,
 .learnmore a:hover,
-.sidebar a:hover{
+.sidebar a:hover
+{
     text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
     -webkit-transition:     all .1s;
     -o-transition:          all .1s;
@@ -96,18 +96,48 @@ header {
 
 }
 
+.logo {
+  padding-top: 10px;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+}
+
+.landing-page header {
+    height: 700px;
+    padding-top: 35px;
+    position: relative;
+    background: url(../images/header_bg.jpg) no-repeat top center #121212;
+    background-size: cover;
+}
+
+.benefits {
+    padding: 100px 0 80px;
+}
+
+.benefits ul {
+    list-style: disc;
+    margin: 30px 0 0 80px;
+}
+
+.testimonial {
+    color: white;
+    padding: 70px 0;
+  
+    position: relative;
+}
+
 .main-nav {
     float:right;
     margin-bottom: 20px
     }
 
-.main-nav a {
-    color:#f9e42e;
-    font-weight: 600;
-    font-size: 24px;
-    padding: 10px 5px;
-    margin-left: 15px;
-}
+
 
 .posts {
     display:inline-block;
@@ -143,6 +173,7 @@ footer ul {
 footer li {
     margin: 0 16px;
     display: inline;
+    list-style: none;
 }
 
 .learnmore{
@@ -192,7 +223,8 @@ footer li {
     line-height: 65px;
 }
 
-.readmore {
+.readmore,
+.readless {
     color:#033048;
     font-weight: 600;
 }
@@ -210,10 +242,36 @@ p.readmore {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
+.readless {
+    text-align:right;
+}
+
+p.readless {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
     
 .socialmedia {
         padding: 10px;
         margin: 16px;
+}
+
+.main-nav a {
+    color:#f9e42e;           /* yellow */
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 5px;
+    margin-left: 15px;
+}
+
+.show-on-click{
+    display: none;
+}
+
+.readless{
+    display:none;
 }
 
 /******************************************
@@ -225,3 +283,9 @@ p.readmore {
 /******************************************
 /* STATE
 /*******************************************/
+
+/******************************************
+/* From Assignment 2 css for index.html
+/*******************************************/
+
+\
